@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.toner.catchit.lib.vpn">
+
+    <uses-permission android:name="android.permission.BIND_VPN_SERVICE" />
+
+    <application>
+        <service
+            android:name=".CatchItVpnService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

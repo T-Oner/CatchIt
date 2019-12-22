@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':lib_vpn'
 rootProject.name='CatchIt'
